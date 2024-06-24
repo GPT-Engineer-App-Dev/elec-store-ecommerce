@@ -1,12 +1,6 @@
 import { Container, Text, VStack, Grid, GridItem, Box, Heading, Link, HStack } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-
-const products = [
-  { id: 1, name: "Smartphone", description: "Latest model with advanced features" },
-  { id: 2, name: "Laptop", description: "High performance for work and play" },
-  { id: 3, name: "Smartwatch", description: "Keep track of your health and notifications" },
-  { id: 4, name: "Headphones", description: "Noise-cancelling over-ear headphones" },
-];
+import products from "../data/products";
 
 const Index = () => {
   return (
