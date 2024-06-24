@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ProductProvider } from "./contexts/ProductContext";
+import { ProductProvider } from "./contexts/ProductContext.jsx";
 import Index from "./pages/Index.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Products from "./pages/Products.jsx";
