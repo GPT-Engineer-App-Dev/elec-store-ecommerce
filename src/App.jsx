@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useState } from "react";
+import { products } from "./data/products.js";
 import Index from "./pages/Index.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Products from "./pages/Products.jsx";
@@ -21,7 +22,7 @@ function App() {
       <Navbar onSearch={handleSearch} />
       <Routes>
         <Route exact path="/" element={<Index />} />
-        <Route path="/products" element={<Products filteredProducts={filteredProducts} />} />
+        <Route path="/products" element={<Products products={products} filteredProducts={filteredProducts} />} />
       </Routes>
     </Router>
   );
